@@ -1,4 +1,9 @@
+:root {
+    --white: #FFFFFF;
+    --lightOrange: #ffc004;
+}
 #navigation {
+    grid-area: navigation;
     display: flex;
     justify-content: space-between;
 }
@@ -6,4 +11,41 @@
 #menu {
     display: flex;
     flex-direction: column;
+    width: 4.563rem;
+    height: 4.875rem;
+    box-sizing: border-box;
+    margin: 0rem 0rem 0rem 8.104rem;
+}
+
+#menu > a:focus {
+    color: var(--lightOrange);
+}
+
+#logo {
+    width: 4.728rem;
+    height: 2.363rem;
+    box-sizing: border-box;
+    margin: 1.179rem 0rem 0.958rem 8.104rem;
+    object-fit: contain;
+}
+
+#rightNav {
+    width: 8.688rem;
+    height: 2.525rem;
+    box-sizing: border-box;
+    margin: 1.5633rem 8.125rem 1.5633rem 8.125rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    border: solid 1px var(--white);
+    color: var(--white);
+    text-align: center;
+}
+
+.navFont {
+    font-family: HelveticaNeue;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
 }

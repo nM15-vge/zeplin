@@ -1,0 +1,10 @@
+#root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas:
+    "navigation"
+    "marquee"
+    ;
+    height: 100vh;
+}
