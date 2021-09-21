@@ -1,3 +1,9 @@
-#home {
-    background-image: url(`${process.env.PUBLIC_URL}/abc_logo.svg`);
+#navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
 }
