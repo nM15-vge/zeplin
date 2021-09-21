@@ -1,0 +1,3 @@
+#home {
+    background-image: url(`${process.env.PUBLIC_URL}/abc_logo.svg`);
+}

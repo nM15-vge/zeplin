@@ -1,13 +1,13 @@
 import './App.css';
-import { useContent } from './context/ContentContext';
-
+import { useContent } from './Context/ContentContext';
+import { NavBar } from "./Components/Navigation";
 function App() {
     const data = useContent();
     console.log(data)
     return (
-        <div>
-            <div>Hello World</div>
-        </div>
+        <>
+            <NavBar />
+        </>
     )
 }
 

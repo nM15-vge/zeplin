@@ -4,17 +4,17 @@ export const ContentContext = createContext();
 export const useContent = () => useContext(ContentContext);
 
 export default function ContentProvider(props) {
-    const [data, setData] = useState(null)
+    const [pages, setPages] = useState(null)
 
     useEffect(() => {
         (async() => {
             const res = await fetch("http://localhost:5000/api/test-data");
-            setData(await res.json());
+            setPages((await res.json()).pages);
 
         })()
     }, []);
     return (
-        <ContentContext.Provider value={{data}}>
+        <ContentContext.Provider value={{pages}}>
             {props.children}
         </ContentContext.Provider>
     );
