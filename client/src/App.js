@@ -2,11 +2,12 @@ import './App.css';
 import { useContent } from './context/ContentContext';
 
 function App() {
-    const {data} = useContent();
+    const data = useContent();
+    console.log(data)
     return (
-        <di>
-            {data}
-        </di>
+        <div>
+            <div>Hello World</div>
+        </div>
     )
 }
 

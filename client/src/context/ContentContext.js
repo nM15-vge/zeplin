@@ -1,15 +1,18 @@
-import { createContext, useContext, useEffect } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 export const ContentContext = createContext();
 export const useContent = () => useContext(ContentContext);
 
 export default function ContentProvider(props) {
-    let data;
+    const [data, setData] = useState(null)
 
     useEffect(() => {
-        data = (async() => await fetch("https://f.v1.n0.cdn.getcloudapp.com/items/3e1W2F0W1s2U2d3R2Z46/content.json"))()
-    }, []);
+        (async() => {
+            const res = await fetch("http://localhost:5000/api/test-data");
+            setData(await res.json());
 
+        })()
+    }, []);
     return (
         <ContentContext.Provider value={{data}}>
             {props.children}
