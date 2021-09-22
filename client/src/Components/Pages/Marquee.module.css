@@ -7,3 +7,45 @@
     width: 100%;
     height: 100%;
 }
+
+#cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80rem;
+    height: 11.188rem;
+    box-sizing: border-box;
+    margin: 0rem 8.104rem 0rem 8.104rem;
+    background-color: #FFFFFF;
+}
+
+#cta > p {
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    letter-spacing: -0.063rem;
+    margin: 0rem 0rem 0rem 4.813rem;
+}
+
+#subCTA {
+    width: 16.454rem;
+    height: 1.25rem;
+    margin: 0rem 10.512rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+#textTalk {
+    font-size: 0.688rem;
+    font-weight: 500;
+    line-height: 1.82;
+    letter-spacing: 0.1rem;
+    color: #000000;
+}
+
+#arrow {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0rem 0rem 0rem 0.5rem;
+    color: #ffc001;
+}

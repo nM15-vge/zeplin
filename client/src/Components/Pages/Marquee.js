@@ -5,11 +5,17 @@ const Marquee = ({information: {headline, subhead, cta, background}}) => {
 
     return (
         <div id={styles.marquee}>
-            <div>
-                <h1>{headline}</h1>
-                <p>{subhead}</p>
+            <div id={styles.head}>
+                <h1 id={styles.headline}>{headline}</h1>
+                <p id={styles.subhead}>{subhead}</p>
             </div>
-            <div>{cta}</div>
+            <div id={styles.cta}>
+                <p>{cta}</p>
+                <span id={styles.subCTA}>
+                    <span id={styles.textTalk}>LET'S TALK. </span>
+                    <span id={styles.arrow} class={`fas fa-long-arrow-alt-right`}></span>
+                </span>
+            </div>
         </div>
     )
 }

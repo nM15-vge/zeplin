@@ -3,6 +3,11 @@
 }
 * {
     color: var(--white);
+    font-family: HelveticaNeue;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
 }
 
 html, body {
