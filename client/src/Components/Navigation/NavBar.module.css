@@ -6,6 +6,8 @@
     grid-area: navigation;
     display: flex;
     justify-content: space-between;
+    width: 100vw;
+    max-width: 1440px;
 }
 
 #menu {

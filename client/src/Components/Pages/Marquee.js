@@ -13,7 +13,7 @@ const Marquee = ({information: {headline, subhead, cta, background}}) => {
                 <p>{cta}</p>
                 <span id={styles.subCTA}>
                     <span id={styles.textTalk}>LET'S TALK. </span>
-                    <span id={styles.arrow} class={`fas fa-long-arrow-alt-right`}></span>
+                    <span id={styles.arrow} className={`fas fa-long-arrow-alt-right`}></span>
                 </span>
             </div>
         </div>
